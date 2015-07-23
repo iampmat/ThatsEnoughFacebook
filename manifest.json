@@ -1,0 +1,25 @@
+{
+  "manifest_version": 2,
+
+  "name": "That's Enough Facebook",
+  "description": "This extension removes the Facebook newsfeed after a user generated amount of time",
+  "version": "1.0",
+
+  "browser_action": {
+    "default_popup": "popup.html"
+  },
+
+  "content_scripts": [
+    {
+      "matches": ["https://www.facebook.com/"],
+      "js": ["contentscript.js"]
+    }
+  ],
+    
+  "permissions": [
+    "activeTab",
+    "https://ajax.googleapis.com/",
+    "storage"
+  ]
+}
+
