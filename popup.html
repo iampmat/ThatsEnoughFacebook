@@ -2,19 +2,19 @@
 <html>
   <head>
     <title>That's Enough Facebook Extension Popup</title>
-    <style></style>
+    <link rel="stylesheet" type="text/css" href="popup.css">
     <script src="popup.js"></script>
   </head>
   <body>
-
-    Hide news feed in:
+    <p id="title">That's Enough Facebook</p>
+    <p id="labels">hide newsfeed in:</p>
     <form>
-        <input type="text" name="min" id="min" value="1">
-        Minutes
-        <input type="text" name="sec" id="sec" value="0">
-        Seconds
+        <input type="text" name="min" id="min" class="inputmin" value="1">
+        <p id="labels" class="inputmin">Minutes</p>
+        <input type="text" name="sec" id="sec" class="inputsec" value="0">
+        <p id="labels" class="inputsec">Seconds</p>
     </form> 
     <button id="saveButton">Save</button>
 
   </body>
-</html>  
+</html>
