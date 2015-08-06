@@ -1,7 +1,7 @@
-var el = document.getElementById('stream_pagelet');
-var fbContentArea = document.getElementById('contentArea');
-var messageDiv = document.createElement('div');
-var time = 0;
+var el = document.getElementById('stream_pagelet'),
+    fbContentArea = document.getElementById('contentArea'),
+    messageDiv = document.createElement('div'),
+    time = 0;
 
 chrome.storage.local.get('time', function (result) {
     time = parseFloat(result.time);
