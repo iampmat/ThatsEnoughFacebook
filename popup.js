@@ -1,7 +1,7 @@
 window.onload = function() {
 	chrome.storage.local.get('time', function (result) {
     	var time = parseInt(result.time);
-    	if (time == undefined) {
+    	if (!time) {
     		document.getElementById("min").value = 1;
 			setTime();
     	}
